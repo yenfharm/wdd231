@@ -71,15 +71,15 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-  }
-  
-  footer {
+}
+
+footer {
     background-color: #337ab7;
     color: #fff;
     padding: 1em 0;
     text-align: center;
-  }
-  
-  footer p {
+}
+
+footer p {
     margin: 0;
-  }
+}
