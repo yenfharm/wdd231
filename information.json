@@ -1,0 +1,23 @@
+{
+    "family_name": "Family Armas",
+    "date_of_moving": "2024-08-23",
+    "number_of_record": 8,
+    "visited_by_bishopric": false,
+    "family_members": [
+        {
+            "name": "Pedro Armas",
+            "gender": "Male",
+            "birthdate": "1968-01-15"
+        },
+        {
+            "name": "Yenny Coromoto",
+            "gender": "Female",
+            "birthdate": "1974-07-25"
+        },
+        {
+            "name": "Angela Armas",
+            "gender": "Female",
+            "birthdate": "1997-03-03"
+        }
+    ]
+}
