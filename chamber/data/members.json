@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Polar",
+        "address": "123 Main St, Anytown, USA",
+        "phone": "555-1234",
+        "website": "https://empresaspolar.com/",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4SHO1S8Q_wcHpa4Q1lO06S-R9IBBizsmLQQ&s",
+        "membershipLevel": 2,
+        "description": "Company A is a leading provider of innovative solutions."
+    },
+    {
+        "name": "Nestle",
+        "address": "456 Elm St, Othertown, USA",
+        "phone": "555-5678",
+        "website": "https://www.nestle.com/",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVdB1s2qZUyLzx60s_kdm4VBDTkL0-hytpSQ&s",
+        "membershipLevel": 1,
+        "description": "Company B is a trusted partner for business growth."
+    },
+    {
+        "name": "Coca Cola",
+        "address": "789 Oak St, Thistown, USA",
+        "phone": "555-9012",
+        "website": "https://www.coca-cola.com/es/es",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQECBpZkRNWJZ-iqPsKsSLT7Fcn8Xr5vBiK1g&s",
+        "membershipLevel": 3,
+        "description": "Company C is a pioneer in cutting-edge technology."
+    },
+    {
+        "name": "Ford Mustang",
+        "address": "321 Pine St, That town, USA",
+        "phone": "555-1111",
+        "website": "https://www.ford.com/cars/mustang/",
+        "image": "https://i.ebayimg.com/thumbs/images/g/99YAAOSw7t1lyJ4V/s-l225.jpg",
+        "membershipLevel": 2,
+        "description": "Company D is a leader in sustainable practices."
+    },
+    {
+        "name": "Samsung",
+        "address": "901 Maple St, This town, USA",
+        "phone": "555-2222",
+        "website": "https://www.samsung.com/us/",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE4_1aEWdkMwbedzb7SjD1SMUsCCIgEKivdA&s",
+        "membershipLevel": 1,
+        "description": "Company E is a trusted advisor for business strategy."
+    },
+    {
+        "name": "Iphone",
+        "address": "234 Cedar St, Other town, USA",
+        "phone": "555-3333",
+        "website": "https://www.apple.com/iphone/",
+        "image": "https://viateklb.com/wp-content/uploads/2023/10/Apple-iphone-15-Pro-128GB.jpg",
+        "membershipLevel": 3,
+        "description": "Company F is a innovator in digital marketing."
+    },
+    {
+        "name": "Xiaomi",
+        "address": "567 Spruce St, That town, USA",
+        "phone": "555-4444",
+        "website": "https://www.mi.com/global/",
+        "image": "https://compucentro.co/wp-content/uploads/descarga-31.jpg",
+        "membershipLevel": 2,
+        "description": "Company G is a provider of exceptional customer service."
+    }
+]

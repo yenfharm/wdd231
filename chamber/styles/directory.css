@@ -1,0 +1,27 @@
+.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 4rem; 
+}
+
+.list-view {
+    display: block; 
+}
+
+div.member {
+    text-align: center; 
+}
+
+h1 {
+    text-align: center;
+    font-style: italic;
+    background-color: #337ab7;
+
+}
+
+footer {
+    background-color: #337ab7;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
