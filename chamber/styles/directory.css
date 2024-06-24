@@ -3,21 +3,17 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
     gap: 4rem; 
 }
-
 .list-view {
     display: block; 
 }
-
 div.member {
     text-align: center; 
 }
-
 h1 {
     text-align: center;
     font-style: italic;
     background-color: #337ab7;
 }
-
 
 .navigation {
     display: flex;
@@ -33,7 +29,6 @@ h1 {
     font-weight: 700;
     background-color: #333;
 }
-
 footer {
     background-color: #337ab7;
     color: #fff;
