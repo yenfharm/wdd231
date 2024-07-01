@@ -10,8 +10,8 @@ document.getElementById("lastModified").innerHTML = `Last modified on: ${lastMod
 
 // 1. Fetch weather data from OpenWeatherMap API
 async function getWeatherData() {
-    const apiKey = 'YOUR_API_KEY'; // Replace with your actual API key
-    const city = 'Your City'; // Replace with your desired city
+    const apiKey = '2919150a203c4558b58ba36da7495d46'; // Replace with your actual API key
+    const city = 'Venezuela'; // Replace with your desired city
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     
     try {
