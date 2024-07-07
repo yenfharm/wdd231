@@ -172,13 +172,6 @@ h1,
 h2 {
     margin: 0;
 }
-
-:modal {
-    background-color: beige;
-    border-radius: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-}
-
 #modal {
     width: 250px;
     height: 250px;
