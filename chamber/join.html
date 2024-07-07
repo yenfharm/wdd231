@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce Directory Page</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="scripts/index.js" defer></script>
+
+    <meta property="og:title" content="Home Page - Yenfhael Armas WDD231">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4SHO1S8Q_wcHpa4Q1lO06S-R9IBBizsmLQQ&s">
+    <meta property="og:url" content="https://yenfharm.github.io/wdd231/chamber/directory.html">
+    <meta name="description" content="Page with information about relevant companies and contact information.">
+    <meta name="author" content="Yenfhael Armas">
+    <link rel="icon" href="/favicon.ico">
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="img/images.jpeg" alt="Timbuktu Chamber of Commerce Logo">
+                <p>Chamber of Commerce</p>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navigation">
+        <a href="#">Home</a>
+        <a href="/chamber/index.html">Chamber</a>
+        <a href="#">GitHub Profile</a>
+        <a href="#">LinkedIn</a>
+    </nav>
+
+
+
+
+    <form action="thankyou.html" method="get">
+
+        <label for="nombre">Nombre del Solicitante:</label>
+        <input type="text" id="nombre" name="nombre" required autocomplete="on"><br><br>
+
+        <label for="apellido">Apellido del Solicitante:</label>
+        <input type="text" id="apellido" name="apellido" required autocomplete="on"><br><br>
+
+        <label for="titulo">Título Organizacional:</label>
+        <input type="text" id="titulo" name="titulo" required autocomplete="on" pattern="[a-zA-Z\- ]{7,}"><br><br>
+
+        <label for="email">Dirección de Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required autocomplete="on" placeholder="ejemplo@ejemplo.com"><br><br>
+
+        <label for="telefono">Número de Teléfono Móvil:</label>
+        <input type="tel" id="telefono" name="telefono" required autocomplete="on"><br><br>
+
+        <label for="organizacion">Nombre de la Empresa/Organización:</label>
+        <input type="text" id="organizacion" name="organizacion" required autocomplete="on"><br><br>
+
+        <label for="membresia">Nivel de Membresía:</label>
+        <select id="membresia" name="membresia">
+            <option value="NP">Membresía NP (Sin Fines de Lucro)</option>
+            <option value="Bronce">Membresía Bronce</option>
+            <option value="Plata">Membresía Plata</option>
+            <option value="Dorada">Membresía Dorada</option>
+        </select><br><br>
+
+        <label for="descripcion">Descripción:</label>
+        <textarea id="descripcion" name="descripcion" rows="5" cols="40"></textarea><br><br>
+
+        <input type="hidden" name="timestamp" value=""> 
+
+        <input type="submit" value="Enviar">
+    
+    </form>
+
+    
+
+
+    <footer>
+        <p>Copyright &copy; <span id="currentyear">2024</span> Yenfhael Armas - Carabobo, Venezuela</p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>
