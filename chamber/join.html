@@ -35,40 +35,40 @@
         <a href="#">LinkedIn</a>
     </nav>
 
-    <form action="thankyou.html" method="get">
+    <form action="thankyou.html" method="GET">
 
-        <label for="nombre">Nombre del Solicitante:</label>
-        <input type="text" id="nombre" name="nombre" required autocomplete="on"><br><br>
+        <label for="name">User's Name:</label>
+        <input type="text" id="Name" name="Name" required autocomplete="on"><br><br>
 
-        <label for="apellido">Apellido del Solicitante:</label>
-        <input type="text" id="apellido" name="apellido" required autocomplete="on"><br><br>
+        <label for="lastname">User's LastName:</label>
+        <input type="text" id="LastName" name="LastName" required autocomplete="on"><br><br>
 
-        <label for="titulo">Título Organizacional:</label>
-        <input type="text" id="titulo" name="titulo" required autocomplete="on" pattern="[a-zA-Z\- ]{7,}"><br><br>
+        <label for="title">Title:</label>
+        <input type="text" id="Title" name="Title" required autocomplete="on" pattern="[a-zA-Z\- ]{7,}"><br><br>
 
-        <label for="email">Dirección de Correo Electrónico:</label>
-        <input type="email" id="email" name="email" required autocomplete="on" placeholder="ejemplo@ejemplo.com"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="Email" name="Email" required autocomplete="on" placeholder="example@example.com"><br><br>
 
-        <label for="telefono">Número de Teléfono Móvil:</label>
-        <input type="tel" id="telefono" name="telefono" required autocomplete="on"><br><br>
+        <label for="Phone">Phone Number:</label>
+        <input type="Phone" id="Phone" name="Phone" required autocomplete="on"><br><br>
 
-        <label for="organizacion">Nombre de la Empresa/Organización:</label>
-        <input type="text" id="organizacion" name="organizacion" required autocomplete="on"><br><br>
+        <label for="Organization">Nombre de la Empresa/Organización:</label>
+        <input type="text" id="Organization" name="Organization" required autocomplete="on"><br><br>
 
-        <label for="membresia">Nivel de Membresía:</label>
-        <select id="membresia" name="membresia">
-            <option value="NP">Membresía NP (Sin Fines de Lucro)</option>
-            <option value="Bronce">Membresía Bronce</option>
-            <option value="Plata">Membresía Plata</option>
-            <option value="Dorada">Membresía Dorada</option>
+        <label for="membership">Nivel de Membresía:</label>
+        <select id="Membership" name="Membership">
+            <option value="NP">Membresía NP (Non-profit)</option>
+            <option value="Bronze">Membership Bronze</option>
+            <option value="Silver">Membership Silver</option>
+            <option value="Gold">Membership Gold</option>
         </select><br><br>
 
-        <label for="descripcion">Descripción:</label>
-        <textarea id="descripcion" name="descripcion" rows="5" cols="40"></textarea><br><br>
+        <label for="description">Description:</label>
+        <textarea id="Description" name="Description" rows="5" cols="40"></textarea><br><br>
 
-        <input type="hidden" name="timestamp" value=""> 
+        <input type="hidden" id="loadTimestamp" name="loadTimestamp" value="">
 
-        <input type="submit" value="Enviar">
+        <input type="submit" value="Submit">
     
     </form>
 

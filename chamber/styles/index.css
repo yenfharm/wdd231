@@ -126,11 +126,9 @@ footer {
     border: 0;
     box-shadow: 0 0 1em rgb(0 0 0 / 0.3);
 }
-
 #modal::backdrop {
     background: rgb(0 0 0 / 0.5);
 }
-
 body {
     min-height: 100vh;
     margin: 2rem;
@@ -177,7 +175,7 @@ h2 {
     height: 250px;
     border: 5px;
     animation-name: move;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-direction: alternate-reverse;
 
 }
@@ -188,7 +186,6 @@ h2 {
     }
 }
 
-
 form {
     max-width: 600px;
     margin: 40px auto;
@@ -196,82 +193,67 @@ form {
     background-color: #f9f9f9;
     border: 1px solid #ccc;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  label {
+}
+label {
     display: block;
     margin-bottom: 10px;
-  }
-  
-  input[type="text"], input[type="email"], input[type="tel"] {
+}
+input[type="text"], input[type="email"], input[type="tel"] {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
-  }
-  
-  input[type="submit"] {
+}
+input[type="submit"] {
     background-color: #4CAF50;
     color: #fff;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-  }
-  
-  input[type="submit"]:hover {
+}
+input[type="submit"]:hover {
     background-color: #3e8e41;
-  }
-  
-  select {
+}
+select {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
-  }
-  
-  textarea {
+}
+textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
-  }
-  
-  /* Thank you page styling */
-  
-  .thankyou-page {
+}
+.thankyou-page {
     text-align: center;
     padding: 40px;
-  }
-  
-  .thankyou-page h1 {
+}
+.thankyou-page h1 {
     font-size: 36px;
     margin-bottom: 20px;
-  }
-  
-  .thankyou-page p {
+}
+.thankyou-page p {
     font-size: 18px;
     margin-bottom: 40px;
-  }
-  
-  .data-display {
+}
+.data-display {
     margin-top: 40px;
     padding: 20px;
     background-color: #f9f9f9;
     border: 1px solid #ccc;
-  }
-  
-  .data-display ul {
+}
+.data-display ul {
     list-style: none;
     padding: 0;
     margin: 0;
-  }
-  
-  .data-display li {
+}
+.data-display li {
     padding: 10px;
     border-bottom: 1px solid #ccc;
-  }
-  
-  .data-display li:last-child {
+}
+.data-display li:last-child {
     border-bottom: none;
-  }
+}
