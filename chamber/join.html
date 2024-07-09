@@ -56,6 +56,15 @@
         <input type="text" id="Organization" name="Organization" required autocomplete="on"><br><br>
 
         <label for="Membership">Membership Level:</label>
+        <button id="open">Membership Benefits</button>
+    
+                <dialog id="modal">
+                    <h2>Membership Benefits</h2>
+                    <p>Membership Bronze: A regular consultancy with a manager</p>
+                    <p>Membership Silver: Pass to planning meetings with guidance and supervision</p>
+                    <p>Membership Gold: Attend all meetings and events with the best advice</p>
+                    <button id="close">❌</button>
+                </dialog>
         <select id="Membership" name="Membership">
             <option value="NP">Membership NP (Non-profit)</option>
             <option value="Bronze">Membership Bronze</option>

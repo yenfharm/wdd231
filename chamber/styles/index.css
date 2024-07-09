@@ -171,8 +171,8 @@ h2 {
     margin: 0;
 }
 #modal {
-    width: 250px;
-    height: 250px;
+    width: 350px;
+    height: 350px;
     border: 5px;
     animation-name: move;
     animation-duration: 1s;
