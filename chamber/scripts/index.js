@@ -84,3 +84,22 @@ openModal.addEventListener("click", () => {
 closeModal.addEventListener("click", () => {
   modal.close();
 });
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  var lazyLoadImages = document.querySelectorAll(".lazy-load");
+  var lazyLoadThreshold = 200; // ajusta este valor para cambiar el umbral de carga
+
+  function lazyLoad() {
+    lazyLoadImages.forEach(function(image) {
+      if (image.offsetTop < window.innerHeight + lazyLoadThreshold) {
+        image.src = image.getAttribute("data-src");
+        image.classList.add("loaded");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", lazyLoad);
+  lazyLoad();
+});
