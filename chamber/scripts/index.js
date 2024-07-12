@@ -89,15 +89,15 @@ closeModal.addEventListener("click", () => {
 
 document.addEventListener("DOMContentLoaded", function() {
   var lazyLoadImages = document.querySelectorAll(".lazy-load");
-  var lazyLoadThreshold = 200; // ajusta este valor para cambiar el umbral de carga
+  var lazyLoadThreshold = 200; // adjust this value to change the loading threshold
 
   function lazyLoad() {
-    lazyLoadImages.forEach(function(image) {
-      if (image.offsetTop < window.innerHeight + lazyLoadThreshold) {
-        image.src = image.getAttribute("data-src");
-        image.classList.add("loaded");
-      }
-    });
+      lazyLoadImages.forEach(function(image) {
+          if (image.offsetTop < window.innerHeight + lazyLoadThreshold) {
+              image.src = image.getAttribute("data-src");
+              image.classList.add("loaded");
+          }
+      });
   }
 
   window.addEventListener("scroll", lazyLoad);
