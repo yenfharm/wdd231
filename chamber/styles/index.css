@@ -19,11 +19,12 @@ header {
 .logo {
     display: flex;
     align-items: center;
+    width: 100px;
+    height: 100px;
 }
 
 .logo img {
-    height: 30px;
-    margin-right: 10px;
+    height: 100px;
 }
 
 .navigation {
