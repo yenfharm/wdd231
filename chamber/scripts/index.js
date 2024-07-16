@@ -72,7 +72,6 @@ displayWeather();
 displayChamberMembers();
 
 
-
 const modal = document.querySelector("#modal");
 const openModal = document.querySelector("#open");
 const closeModal = document.querySelector("#close");
@@ -84,7 +83,6 @@ openModal.addEventListener("click", () => {
 closeModal.addEventListener("click", () => {
   modal.close();
 });
-
 
 
 document.addEventListener("DOMContentLoaded", function() {
