@@ -1,0 +1,954 @@
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&family=News+Cycle&display=swap');
+
+
+/*Preloader*/
+.preload {
+    position: fixed;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    background-color: #ffff;
+    z-index: 999;
+}
+
+.preload-container {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #ebebec;
+    border-radius: 50%;
+}
+
+.preload-container::before {
+    content: ' ';
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-top: 4px solid #1964A7;
+    border-radius: 50%;
+    animation: preloadplus 1.5s infinite linear;
+}
+
+.preload-icon {
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.preload-icon img {
+    width: 110px;
+    object-fit: cover;
+    transform: scale(1.1);
+    animation: preloading 900ms infinite alternate linear;
+}
+
+
+.hidden {
+    overflow: hidden;
+}
+
+@keyframes preloadplus {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@keyframes preloading {
+    0% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+/*Index*/
+.img-logo {
+    width: 170px;
+    height: 50px;
+}
+
+.navbar-nav.navbar-center {
+    position: relative;
+    left: 52%;
+    transform: translatex(-50%);
+}
+
+.navbar-nav>li {
+    padding-left: 40px;
+    padding-top: 18px;
+    padding-bottom: 10px;
+    font-family: 'Francois One', sans-serif;
+    font-size: 16.5px;
+    letter-spacing: 0.30px;
+}
+
+.nav-item>.nav-link {
+    color: white !important;
+}
+
+.active_nav {
+    background-color: #1964A7EF !important;
+}
+
+.dropdown-menu {
+    border-radius: 0px !important;
+    font-family: 'News Cycle', sans-serif;
+}
+
+.dropdown-item:active {
+    background-color: #1964A7 !important;
+}
+
+.active_descarga {
+    background-color: #ffffff !important;
+    color: #1964A7 !important;
+}
+
+.navbar-nav.navbar-center .descarga {
+    font-size: 16.5px;
+    text-decoration: none;
+    color: white;
+    background-color: #1964A7;
+    padding: 8px 20px;
+    text-align: center;
+    border-radius: 10px;
+    line-height: 39px;
+    font-family: 'Francois One', sans-serif;
+}
+
+.navbar-light .navbar-toggler i {
+    color: white;
+}
+
+.navbar-light .navbar-toggler {
+    border: 1px solid white;
+}
+
+/*PORTADA GENERAL*/
+.portada img {
+    height: 500px;
+}
+
+.portada h1 {
+    font-family: 'Francois One', sans-serif;
+    font-size: 60px;
+    color: white;
+}
+
+/*PORTADA GENERAL*/
+.portadaC img {
+    height: 350px;
+}
+
+/*NEW SLIDE */
+#slide{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image:url(EMGYTEC-portada\ \(2\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.swiper {
+    width: 100%;
+    padding-top: 160px;
+    min-height: 100vh;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, rgb(255, 255, 255));
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 371px;
+}
+
+/*NOSOTROS*/
+.nosotros {
+    text-align: justify;
+    line-height: 1.7em;
+}
+
+.nosotros h2 {
+    font-size: 40px;
+    font-family: 'Francois One', sans-serif;
+    color: #ffffff;
+    background-color: #1964A7;
+    padding: 10px 0px 10px 8px;
+}
+
+.nosotros p {
+    font-size: 17px;
+    font-family: 'News Cycle', sans-serif;
+    margin-bottom: 15px;
+    margin-top: 30px;
+    color: #585b5f;
+}
+
+.nosotros .video iframe {
+    margin-top: 24px;
+    width: 100%;
+    height: 100%;
+}
+
+.contenidos {
+    margin-top: 60px;
+    font-size: 60px;
+    color: white;
+}
+
+#fondo {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-image: url(EMGYTEC-nosotros.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#fondo::before {
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.contenidos .como {
+    margin-top: 50px;
+}
+
+.contenidos h1 {
+    margin-left: 80px;
+    font-size: 55px;
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    position: relative;
+}
+
+.contenidos i {
+    font-size: 50px;
+    color: white;
+    align-content: center;
+}
+
+.contenidos h3 {
+    margin-bottom: 15px;
+    font-size: 40px;
+    font-family: 'Francois One', sans-serif;
+    color: white;
+}
+
+.contenidos .mision {
+    background-color: #3f8dd1;
+    opacity: 0.77;
+    position: relative;
+}
+
+.contenidos .vision {
+    background-color: #357bb9;
+    opacity: 0.8;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.contenidos p {
+    font-size: 17px;
+    font-family: 'News Cycle', sans-serif;
+    color: white;
+    text-align: justify;
+    opacity: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*CLIENTES Y MARCAS*/
+#hero {
+    position: relative;
+}
+
+.clima .absolute {
+    position: relative;
+    z-index: 1;
+}
+
+.clima h2 {
+    font-size: 50px;
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    padding-bottom: 30px;
+}
+
+.clima .clientes,
+.clima .marcas {
+    padding-top: 80px;
+    padding-bottom: 70px;
+}
+
+.clima video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.clima .clientes img {
+    display: block;
+    width: 80%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 50%;
+    transition: all .3s ease-in-out;
+    opacity: 0.7;
+}
+
+.clima .clientes img:hover {
+    transform: scale(1.2);
+    transform-origin: center center;
+    opacity: 1;
+}
+
+.clima .marcas img {
+    display: block;
+    width: 80%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 50%;
+    transition: all .3s ease-in-out;
+    opacity: 0.7;
+}
+
+.clima .marcas img:hover {
+    transform: scale(1.3);
+    transform-origin: center center;
+    opacity: 1;
+}
+
+.clima .capa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1c1c1d;
+    opacity: 0.8;
+}
+
+.clima .carousel-control-next-icon,
+.clima .carousel-control-prev-icon {
+    height: 50px;
+    width: 28px;
+}
+
+/* Formulario de contacto*/
+.formulario {
+    width: 80%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    margin: 50px auto;
+}
+
+.formulario .form_contact h2 {
+    font-family: 'Francois One', sans-serif;
+    color: #1964A7;
+}
+
+.formulario .form_contact {
+    padding: 30px 40px;
+}
+
+.formulario .user_info input,
+.formulario .user_info textarea {
+    font-family: 'News Cycle', sans-serif;
+    font-size: 15px;
+    color: #585b5f;
+}
+
+.formulario .form_contact h2 {
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    font-family: 'Francois One', sans-serif;
+    color: #1964A7;
+}
+
+.formulario .form_contact .user_info {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario .form_contact label {
+    font-family: 'News Cycle', sans-serif;
+    font-size: 18px;
+}
+
+.formulario .row .mapa p {
+    margin-top: 15px;
+    font-size: 15px;
+    font-family: 'News Cycle', sans-serif;
+}
+
+.formulario .mapa {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px;
+}
+
+.formulario .mapa iframe {
+    height: 100%;
+}
+
+form.form_contact input,
+form.form_contact textarea {
+    width: 100%;
+    padding: 8px 0px 5px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 2px solid #D1D1D1;
+    font-family: 'News Cycle', sans-serif;
+    color: #5A5A5A;
+    font-size: 14px;
+    font-weight: 400;
+
+}
+
+form.form_contact input,
+form.form_contact textarea {
+    width: 100%;
+    padding: 8px 0px 5px;
+    margin-bottom: 20px;
+    border: none !important;
+    border-bottom: 2px solid #D1D1D1 !important;
+    font-family: 'News Cycle', sans-serif;
+    color: #5A5A5A;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+form.form_contact textarea {
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 90px;
+}
+
+.formulario .user_info button {
+    width: 140px;
+    background: #1964A7;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+
+    align-self: flex-end;
+
+    color: #fff;
+    font-family: 'News Cycle', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.formulario .user_info button:hover {
+    background: #4091EC;
+}
+
+/*Servicios General*/
+.wrap {
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+}
+
+.store-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menuV {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 50px;
+    padding-top: 60px;
+}
+
+.menuV button {
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+    margin-bottom: 15px;
+    background: #1c4e86;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'News Cycle', sans-serif;
+    border-style: solid;
+    border-width: 0px;
+}
+
+.menuV button:hover {
+    background: #1964A7;
+    color: #ffffff;
+}
+
+section.tab {
+    height: auto;
+    background-color: #ffffff;
+    padding: 0 20px 50px 20px;
+
+}
+
+section.tab a {
+    margin: 10px 0 30px 0px;
+}
+
+.hide_tab {
+    display: none;
+}
+
+/*Automatiación*/
+section#tab_control img {
+    height: 350px;
+    padding-top: 60px;
+}
+
+section#tab_auto_industrial img,
+section#tab_scada img,
+section#tab_instrumentacion img,
+section#tab_industria img {
+    height: 430px;
+    padding-top: 60px;
+}
+
+section#tab_auto_industrial .btn,
+section#tab_instrumentacion .btn,
+section#tab_control .btn,
+section#tab_industria .btn,
+section#tab_scada .btn {
+    background: #4f8ace;
+    border: #4f8ace;
+}
+
+section#tab_auto_industrial .btn:hover,
+section#tab_instrumentacion .btn:hover,
+section#tab_control .btn:hover,
+section#tab_industria .btn:hover,
+section#tab_scada .btn:hover {
+    background: #1964A7;
+    color: #ffffff;
+}
+
+section#tab_auto_industrial h2,
+section#tab_control h2,
+section#tab_instrumentacion h2,
+section#tab_industria h2,
+section#tab_scada h2 {
+    font-family: 'News Cycle', sans-serif;
+    font-size: 25px;
+    padding-top: 60px;
+}
+
+section#tab_auto_industrial p,
+section#tab_control p,
+section#tab_instrumentacion p,
+section#tab_industria p,
+section#tab_scada p {
+    font-family: 'News Cycle', sans-serif;
+    font-size: 17px;
+    text-align: justify;
+    color: #606469;
+}
+
+section#tab_auto_industrial li,
+section#tab_control li,
+section#tab_instrumentacion li,
+section#tab_industria li,
+section#tab_scada li {
+    font-family: 'News Cycle', sans-serif;
+    font-size: 17px;
+    text-align: justify;
+    color: #606469;
+}
+
+/*Energía*/
+section#tab_panel h2,
+section#tab_eolica h2,
+section#tab_respaldo h2,
+section#tab_electrogeno h2 {
+    font-family: 'News Cycle', sans-serif;
+    font-size: 23px;
+    padding-top: 60px;
+}
+
+section#tab_panel p,
+section#tab_eolica p,
+section#tab_respaldo p,
+section#tab_electrogeno p {
+    font-family: 'News Cycle', sans-serif;
+    font-size: 17px;
+    text-align: justify;
+    color: #606469;
+}
+
+section#tab_panel li,
+section#tab_eolica li,
+section#tab_respaldo li,
+section#tab_electrogeno li {
+    font-family: 'News Cycle', sans-serif;
+    font-size: 17px;
+    text-align: justify;
+    color: #606469;
+}
+
+section#tab_panel img,
+section#tab_eolica img {
+    height: 340px;
+    width: 90%;
+    padding-top: 60px;
+}
+
+section#tab_respaldo img {
+    height: 480px;
+    width: 100%;
+    padding-top: 60px;
+}
+
+section#tab_eolica img {
+    height: 570px;
+    width: 110%;
+    padding-top: 60px;
+}
+
+section#tab_electrogeno img {
+    height: 500px;
+    padding-top: 60px;
+}
+
+section#tab_panel .btn,
+section#tab_eolica .btn,
+section#tab_respaldo .btn,
+section#tab_electrogeno .btn {
+    background: #4f8ace;
+    border: #4f8ace;
+    margin-top: 30px;
+}
+
+section#tab_panel .btn:hover,
+section#tab_eolica .btn:hover,
+section#tab_respaldo .btn:hover,
+section#tab_electrogeno .btn:hover {
+    background: #1964A7;
+    color: #ffffff;
+}
+
+/*Mantenimiento*/
+section#tab_mecanicos h2,
+section#tab_electronicos h2,
+section#tab_laboratorio h2,
+section#tab_computo h2 {
+    font-family: 'News Cycle', sans-serif;
+    font-size: 23px;
+    padding-top: 60px;
+}
+
+section#tab_mecanicos p,
+section#tab_electronicos p,
+section#tab_laboratorio p,
+section#tab_computo p {
+    font-family: 'News Cycle', sans-serif;
+    font-size: 17px;
+    text-align: justify;
+    color: #606469;
+}
+
+section#tab_mecanicos li,
+section#tab_electronicos li,
+section#tab_laboratorio li,
+section#tab_computo li {
+    font-family: 'News Cycle', sans-serif;
+    font-size: 17px;
+    text-align: justify;
+    color: #606469;
+}
+
+section#tab_mecanicos img,
+section#tab_electronicos img,
+section#tab_computo img {
+    height: 485px;
+    width: 100%;
+    padding-top: 60px;
+}
+
+section#tab_laboratorio img {
+    height: 510px;
+    width: 100%;
+    padding-top: 60px;
+}
+
+section#tab_electronicos img {
+    height: 540px;
+    width: 100%;
+    padding-top: 60px;
+}
+
+section#tab_computo img {
+    height: 470px;
+    width: 100%;
+    padding-top: 60px;
+}
+
+section#tab_mecanicos .btn,
+section#tab_electronicos .btn,
+section#tab_laboratorio .btn,
+section#tab_computo .btn {
+    background: #4f8ace;
+    border: #4f8ace;
+    margin-top: 30px;
+}
+
+section#tab_mecanicos .btn:hover,
+section#tab_electronicos .btn:hover,
+section#tab_laboratorio .btn:hover,
+section#tab_computo .btn:hover {
+    background: #c4cbd2;
+    color: #ffffff;
+}
+
+/*Proyectos*/
+section#tab_radio h2,
+section#tab_robotica h2,
+section#tab_red h2,
+section#tab_pw h2 {
+    font-family: 'News Cycle', sans-serif;
+    font-size: 23px;
+    padding-top: 60px;
+}
+
+section#tab_radio p,
+section#tab_robotica p,
+section#tab_red p,
+section#tab_pw p {
+    font-family: 'News Cycle', sans-serif;
+    font-size: 17px;
+    text-align: justify;
+    color: #606469;
+}
+
+section#tab_pw .ventajas {
+    padding-top: 20px;
+}
+
+section#tab_pw .ventajas i {
+    color: #070808;
+    font-size: 30px;
+}
+
+section#tab_pw .descripcion .titulo {
+    padding-top: 10px;
+    font-family: 'Francois One', sans-serif;
+    font-size: 17px;
+}
+
+section#tab_pw .descripcion p {
+    font-family: 'News Cycle', sans-serif;
+    font-size: 17px;
+    text-align: center;
+    color: #606469;
+}
+
+section#tab_radio li,
+section#tab_robotica li,
+section#tab_red li,
+section#tab_pw li {
+    font-family: 'News Cycle', sans-serif;
+    font-size: 17px;
+    text-align: justify;
+    color: #606469;
+}
+
+section#tab_radio img,
+section#tab_robotica img {
+    height: 500px;
+    width: 100%;
+    padding-top: 60px;
+}
+
+
+section#tab_red img {
+    height: 440px;
+    padding-top: 60px;
+}
+
+section#tab_pw img {
+    height: 410px;
+    padding-top: 60px;
+}
+
+section#tab_radio .btn,
+section#tab_robotica .btn,
+section#tab_red .btn,
+section#tab_pw .btn {
+    background: #4f8ace;
+    border: #4f8ace;
+    margin-top: 30px;
+}
+
+section#tab_radio .btn:hover,
+section#tab_robotica .btn:hover,
+section#tab_red .btn:hover,
+section#tab_pw .btn:hover {
+    background: #1964A7;
+    color: #ffffff;
+}
+
+/*Footer*/
+.pie {
+    width: 100%;
+    background-color: #12263A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: beige;
+    font-size: 13px;
+    line-height: 0.3em;
+    position: relative;
+}
+
+.box img {
+    width: 85%;
+    height: 100%;
+    display: flex;
+    padding-top: 17px;
+}
+
+.grupo-1 {
+    padding-top: 20px;
+}
+
+.grupo-1 .box h2 {
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: 'Francois One', sans-serif;
+}
+
+.grupo-1 .box p {
+    color: efefef;
+    margin-bottom: 8.5px;
+    line-height: 1.5;
+    text-align: justify;
+    font-family: 'News Cycle', sans-serif;
+    font-size: 15px;
+}
+
+.grupo-1 .red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 25px;
+    height: 55px;
+    line-height: 40px;
+    color: white;
+    margin-right: 10px;
+    text-align: center;
+    transition: all 300ms ease;
+    font-size: 23px;
+}
+
+.grupo-1 .red-social a:hover {
+    color: rgba(225, 225, 225, 0.668);
+}
+
+hr {
+    border-top-width: 1.8px;
+    border-color: white;
+    opacity: 5;
+}
+
+.grupo-2 {
+    padding-top: 8px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 15px;
+}
+
+.contact {
+    margin-bottom: 50px;
+}
+
+.ubicacion .boton a {
+    display: inline-flex;
+    width: 45%;
+    height: 35px;
+    align-items: center;
+    font-family: 'News Cycle', sans-serif;
+    font-size: 15px;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    transition: .5s ease all;
+    border-radius: 0.5px;
+    background-color: #12263A;
+    border-color: #ffffff;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+
+@media screen and (max-width:800px) {
+    .contact-container {
+        margin: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1.5rem;
+        padding: 20px 50px;
+        grid-gap: 70px;
+    }
+}
+
+
+footer {
+    background-color: #337ab7;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+footer p {
+    margin: 0;
+}
